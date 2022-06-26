@@ -1,5 +1,7 @@
 // feito por Beatriz 
 import React from "react"
+import SecondPart from './MainSecondPart'
+import ThirdPart from './MainThirdPart'
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
 import bolo from './assets/bolo.png'
@@ -17,9 +19,11 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   flex-direction:column;
+  padding-bottom: 20vh;
 `
 const Title = styled.div`
   display: flex;
+  padding-top: 10vh;
   width: 100%;
   height: 19vh;
   align-items: center;
@@ -42,10 +46,13 @@ const Menu = styled.div`
 const Recipe = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 85%;
   align-items:center;
   width: 26,5%;
   margin-top: 10vh;
+  background-color: #ffffff;
+  border: lightgrey solid 1px;
+  box-shadow: 0px 7px 6px #00000029;
 `
 const Img = styled.img`
   width: 26,5%;
@@ -84,6 +91,8 @@ export default function App() {
             </Recipe>
         </Menu>
     </Section>
+    <SecondPart/>
+    <ThirdPart/>
     </>
   )  
 }
